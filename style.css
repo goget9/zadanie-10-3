@@ -3,6 +3,7 @@ body div {
     height: 300px;
     width: 400px;
     border: 5px solid red;
+    overflow: hidden;
 }
 body div ul {
 	width: 2000px;
@@ -15,7 +16,6 @@ body div ul li {
     width: 400px;
     position: relative;
     float: left;
-    overflow: hidden;
 }
 body div ul li img {
 	position: absolute;
