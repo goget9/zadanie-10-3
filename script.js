@@ -1,11 +1,4 @@
-$(function(){
-
-	console.log('jQuery works');
-	var carouselList = $("#carousel ul");
-
-	console.log(carouselList)
-
-$(setInterval(nextSlide,3000));
+var carouselList = null;
 
 function nextSlide() {
 	carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
@@ -20,4 +13,15 @@ function moveFirstSlide() {
 	carouselList.css({marginLeft:0});
 }
 
+
+$(function(){
+
+	console.log('jQuery works');
+	carouselList = $("#carousel ul");
+
+	console.log(carouselList)
+
+	setInterval(nextSlide,3000);
+
 })
+
